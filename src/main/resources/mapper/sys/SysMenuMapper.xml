@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.backbay2.kolasecurity.modules.sys.mapper.SysMenuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.backbay2.kolasecurity.modules.sys.model.SysMenu">
+        <id column="id" property="id" />
+        <result column="parent_id" property="parentId" />
+        <result column="code" property="code" />
+        <result column="name" property="name" />
+        <result column="type" property="type" />
+        <result column="perms" property="perms" />
+        <result column="method" property="method" />
+        <result column="url" property="url" />
+        <result column="icon" property="icon" />
+        <result column="component" property="component" />
+        <result column="sort" property="sort" />
+        <result column="visible" property="visible" />
+        <result column="status" property="status" />
+        <result column="remark" property="remark" />
+        <result column="create_at" property="createAt" />
+        <result column="create_by" property="createBy" />
+        <result column="update_at" property="updateAt" />
+        <result column="update_by" property="updateBy" />
+        <result column="level" property="level" />
+    </resultMap>
+
+</mapper>

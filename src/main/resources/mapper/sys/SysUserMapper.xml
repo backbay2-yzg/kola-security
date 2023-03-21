@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.backbay2.kolasecurity.modules.sys.mapper.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.backbay2.kolasecurity.modules.sys.model.SysUser">
+        <id column="id" property="id" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="mobile" property="mobile" />
+        <result column="sex" property="sex" />
+        <result column="email" property="email" />
+        <result column="avatar" property="avatar" />
+        <result column="user_type" property="userType" />
+        <result column="nick_name" property="nickName" />
+        <result column="status" property="status" />
+        <result column="deleted" property="deleted" />
+        <result column="create_at" property="createAt" />
+        <result column="create_by" property="createBy" />
+        <result column="update_at" property="updateAt" />
+        <result column="update_by" property="updateBy" />
+        <result column="delete_at" property="deleteAt" />
+        <result column="delete_by" property="deleteBy" />
+        <result column="remark" property="remark" />
+        <result column="loign_ip" property="loignIp" />
+        <result column="login_at" property="loginAt" />
+        <result column="salt" property="salt" />
+    </resultMap>
+
+</mapper>
