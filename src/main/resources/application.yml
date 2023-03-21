@@ -1,3 +1,6 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
 # 应用名称
 spring:
   application:
@@ -9,14 +12,14 @@ spring:
     # 数据库驱动
     driver-class-name: com.mysql.cj.jdbc.Driver
     # 数据库连接地址
-    url: jdbc:mysql://localhost:3306/blue?userUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/kola-permission?userUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     username: root
     password: 123456
   security:
     user:
       name: backbay2
       password: 123456
-      roles: ADMIN
+#      roles: ADMIN
   #是否启用开发属性默认值
   devtools:
     add-properties: true
@@ -25,9 +28,10 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
-# 应用服务 WEB 访问端口
-server:
-  port: 8080
+    #true:将显示请求参数和标头，这可能会导致潜在敏感数据的不安全日志记录
+    #false:将屏蔽请求参数和标头，以防止潜在敏感数据的不安全日志记录
+    log-request-details: true
+
 # mybatis框架
 #mybatis:
 #  #MyBatis映射定位，指定Mybatis的Mapper文件
